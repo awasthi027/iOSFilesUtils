@@ -1,0 +1,16 @@
+PODS:
+  - ImageCacheiOS (0.0.2)
+
+DEPENDENCIES:
+  - ImageCacheiOS (~> 0.0.2)
+
+SPEC REPOS:
+  trunk:
+    - ImageCacheiOS
+
+SPEC CHECKSUMS:
+  ImageCacheiOS: e75f76a08e61abff421e5cbd77c54d4a79167566
+
+PODFILE CHECKSUM: b312a2d4598f7e06ac227729f8d8314cfd5c4934
+
+COCOAPODS: 1.8.0

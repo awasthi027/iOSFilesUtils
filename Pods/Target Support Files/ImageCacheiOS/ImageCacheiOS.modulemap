@@ -1,0 +1,6 @@
+framework module ImageCacheiOS {
+  umbrella header "ImageCacheiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
