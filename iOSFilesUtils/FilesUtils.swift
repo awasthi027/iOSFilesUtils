@@ -152,7 +152,11 @@ enum ApplicationDirectoryPath: String {
          print("\(appScheme) application is not installed on device")
          return false
          }
-         return UIApplication.shared.canOpenURL(url)
+        let result = FSMainThreadHelper.runSyncOnMainThread { () -> (Bool?) in
+            let canOpen = UIApplication.shared.canOpenURL(url)
+           return canOpen
+          }
+         return result ?? false
       }
     
     @objc public func deleteOldFiles(directory: String, days: UInt, deleteEmptyDirectories: Bool = true) {
