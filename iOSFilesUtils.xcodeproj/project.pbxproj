@@ -12,6 +12,8 @@
 		CB980C962343639E007E2469 /* iOSFilesUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB980C952343639E007E2469 /* iOSFilesUtilsTests.swift */; };
 		CB980C982343639E007E2469 /* iOSFilesUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CB980C8A2343639E007E2469 /* iOSFilesUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBA4518E23ACF1F000718A31 /* FilesUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA4518C23ACF1F000718A31 /* FilesUtils.swift */; };
+		CBA4519523ACF2F300718A31 /* FSMainThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA4519323ACF2F300718A31 /* FSMainThreadHelper.swift */; };
+		CBA4519623ACF2F300718A31 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA4519423ACF2F300718A31 /* LogHelper.swift */; };
 		E3A83C4AA1C2D658AB52BA3A /* Pods_iOSFilesUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E9379FEAA9E456B1C4C5FB /* Pods_iOSFilesUtils.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		CB980C952343639E007E2469 /* iOSFilesUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSFilesUtilsTests.swift; sourceTree = "<group>"; };
 		CB980C972343639E007E2469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBA4518C23ACF1F000718A31 /* FilesUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesUtils.swift; sourceTree = "<group>"; };
+		CBA4519323ACF2F300718A31 /* FSMainThreadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMainThreadHelper.swift; sourceTree = "<group>"; };
+		CBA4519423ACF2F300718A31 /* LogHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
 		FAED3E61BC8ED01B4CED59CA /* Pods-iOSFilesUtilsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSFilesUtilsTests.release.xcconfig"; path = "Target Support Files/Pods-iOSFilesUtilsTests/Pods-iOSFilesUtilsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +109,8 @@
 		CB980C892343639E007E2469 /* iOSFilesUtils */ = {
 			isa = PBXGroup;
 			children = (
+				CBA4519323ACF2F300718A31 /* FSMainThreadHelper.swift */,
+				CBA4519423ACF2F300718A31 /* LogHelper.swift */,
 				CBA4518C23ACF1F000718A31 /* FilesUtils.swift */,
 				CB980C8A2343639E007E2469 /* iOSFilesUtils.h */,
 				CB980C8B2343639E007E2469 /* Info.plist */,
@@ -281,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBA4518E23ACF1F000718A31 /* FilesUtils.swift in Sources */,
+				CBA4519623ACF2F300718A31 /* LogHelper.swift in Sources */,
+				CBA4519523ACF2F300718A31 /* FSMainThreadHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
