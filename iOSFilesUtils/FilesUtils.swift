@@ -94,7 +94,7 @@ enum ApplicationDirectoryPath: String {
                 try fileManager.createDirectory(atPath: directoryPath, withIntermediateDirectories: true, attributes: nil)
                 fileCreateStatus = .created
             } catch {
-                print(error.localizedDescription);
+                FSLogDebug(error.localizedDescription);
             }
         }else {
             fileCreateStatus = .alreadyExist
@@ -110,9 +110,9 @@ enum ApplicationDirectoryPath: String {
           isFileCopiedSuccess = true
         }
         catch let error {
-            print("Faced while copying Error:-\n\(error)")
+            FSLogDebug("Faced while copying Error:-\n\(error)")
         }
-        print("File copied \nfrom: \(sourceURL.path)\nto: \(destURL.path) \nSuccessfully:-\(isFileCopiedSuccess)")
+        FSLogDebug("File copied \nfrom: \(sourceURL.path)\nto: \(destURL.path) \nSuccessfully:-\(isFileCopiedSuccess)")
         return isFileCopiedSuccess
       }
     
@@ -149,7 +149,7 @@ enum ApplicationDirectoryPath: String {
             break
         }
         guard let url = URL(string: "\(appScheme)://app") else {
-         print("\(appScheme) application is not installed on device")
+         FSLogDebug("\(appScheme) application is not installed on device")
          return false
          }
         let result = FSMainThreadHelper.runSyncOnMainThread { () -> (Bool?) in

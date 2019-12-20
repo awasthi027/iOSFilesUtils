@@ -11,9 +11,9 @@
 		CB980C912343639E007E2469 /* iOSFilesUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB980C872343639E007E2469 /* iOSFilesUtils.framework */; };
 		CB980C962343639E007E2469 /* iOSFilesUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB980C952343639E007E2469 /* iOSFilesUtilsTests.swift */; };
 		CB980C982343639E007E2469 /* iOSFilesUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CB980C8A2343639E007E2469 /* iOSFilesUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB980CA2234363E4007E2469 /* FilesUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB980CA1234363E4007E2469 /* FilesUtils.swift */; };
 		CBA4518723ACE83900718A31 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA4518523ACE83900718A31 /* LogHelper.swift */; };
-		CBA4518A23ACEFF600718A31 /* FSMainThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA4518923ACEFF600718A31 /* FSMainThreadHelper.swift */; };
+		CBA4518D23ACF1F000718A31 /* FSMainThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA4518B23ACF1F000718A31 /* FSMainThreadHelper.swift */; };
+		CBA4518E23ACF1F000718A31 /* FilesUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA4518C23ACF1F000718A31 /* FilesUtils.swift */; };
 		E3A83C4AA1C2D658AB52BA3A /* Pods_iOSFilesUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E9379FEAA9E456B1C4C5FB /* Pods_iOSFilesUtils.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,9 +39,9 @@
 		CB980C902343639E007E2469 /* iOSFilesUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSFilesUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB980C952343639E007E2469 /* iOSFilesUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSFilesUtilsTests.swift; sourceTree = "<group>"; };
 		CB980C972343639E007E2469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB980CA1234363E4007E2469 /* FilesUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesUtils.swift; sourceTree = "<group>"; };
 		CBA4518523ACE83900718A31 /* LogHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
-		CBA4518923ACEFF600718A31 /* FSMainThreadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMainThreadHelper.swift; sourceTree = "<group>"; };
+		CBA4518B23ACF1F000718A31 /* FSMainThreadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMainThreadHelper.swift; sourceTree = "<group>"; };
+		CBA4518C23ACF1F000718A31 /* FilesUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesUtils.swift; sourceTree = "<group>"; };
 		FAED3E61BC8ED01B4CED59CA /* Pods-iOSFilesUtilsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSFilesUtilsTests.release.xcconfig"; path = "Target Support Files/Pods-iOSFilesUtilsTests/Pods-iOSFilesUtilsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,11 +109,11 @@
 		CB980C892343639E007E2469 /* iOSFilesUtils */ = {
 			isa = PBXGroup;
 			children = (
-				CBA4518923ACEFF600718A31 /* FSMainThreadHelper.swift */,
+				CBA4518C23ACF1F000718A31 /* FilesUtils.swift */,
+				CBA4518B23ACF1F000718A31 /* FSMainThreadHelper.swift */,
 				CBA4518523ACE83900718A31 /* LogHelper.swift */,
 				CB980C8A2343639E007E2469 /* iOSFilesUtils.h */,
 				CB980C8B2343639E007E2469 /* Info.plist */,
-				CB980CA1234363E4007E2469 /* FilesUtils.swift */,
 			);
 			path = iOSFilesUtils;
 			sourceTree = "<group>";
@@ -286,9 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA4518E23ACF1F000718A31 /* FilesUtils.swift in Sources */,
 				CBA4518723ACE83900718A31 /* LogHelper.swift in Sources */,
-				CB980CA2234363E4007E2469 /* FilesUtils.swift in Sources */,
-				CBA4518A23ACEFF600718A31 /* FSMainThreadHelper.swift in Sources */,
+				CBA4518D23ACF1F000718A31 /* FSMainThreadHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
