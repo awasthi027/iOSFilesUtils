@@ -108,7 +108,7 @@ enum ApplicationDirectoryPath: String {
           isFileCopiedSuccess = true
         }
         catch let error {
-           // FSLogError("Faced while copying Error:-\n\(error)")
+            FSLogError("Faced while copying Error:-\n\(error)")
         }
        // FSLogInfo("File copied \nfrom: \(sourceURL.path)\nto: \(destURL.path) \nSuccessfully:-\(isFileCopiedSuccess)")
         return isFileCopiedSuccess
