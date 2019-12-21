@@ -71,14 +71,12 @@ enum ApplicationDirectoryPath: String {
             case .appFour:
                 applicationDirPath = dirUrl.appendingPathComponent(ApplicationDirectoryPath.emailReportThree.rawValue)
                 break
-             //TODO::2
              default:
                 break
-                //end
             }
             if let dirUrlItem = applicationDirPath {
                 let isCreated = self.createDirectory(atPath: dirUrlItem.absoluteString)
-               // FSLogInfo("Director created at path: \(dirUrlItem.absoluteString) \n status:- \(isCreated.rawValue)")
+                FSLogInfo("Director created at path: \(dirUrlItem.absoluteString) \n status:- \(isCreated.rawValue)")
                applicationDirPath = URL.init(fileURLWithPath: dirUrlItem.absoluteString)
             }
         }
@@ -149,7 +147,7 @@ enum ApplicationDirectoryPath: String {
             break
         }
         guard let url = URL(string: "\(appScheme)://app") else {
-         //FSLogInfo("\(appScheme) application is not installed on device")
+         FSLogInfo("\(appScheme) application is not installed on device")
          return false
          }
         let result = FSMainThreadHelper.runSyncOnMainThread { () -> (Bool?) in
@@ -160,7 +158,7 @@ enum ApplicationDirectoryPath: String {
       }
     
     @objc public static func deleteOldFiles(directory: String, days: UInt, deleteEmptyDirectories: Bool = true) {
-       // FSLogInfo("deleteOldFiles:\(directory) days:\(days) deleteEmptyDirectories:\(deleteEmptyDirectories) ...")
+        FSLogInfo("deleteOldFiles:\(directory) days:\(days) deleteEmptyDirectories:\(deleteEmptyDirectories) ...")
     }
     
     @objc public func donwloadImage() {
