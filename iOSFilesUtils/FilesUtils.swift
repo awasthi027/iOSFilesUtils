@@ -3,7 +3,7 @@
 //  iOSFilesUtils
 //
 //  Created by Ashish Awasthi on 01/10/19.
-//  Copyright © 2019 Tanuja Awasthi. All rights reserved.
+//  Copyright © 2019 Ashish Awasthi. All rights reserved.
 //
 
 import Foundation

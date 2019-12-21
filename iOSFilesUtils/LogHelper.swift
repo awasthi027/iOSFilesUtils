@@ -2,8 +2,8 @@
 //  LogHelper.swift
 //  iOS_FS_Commons
 //
-//  Created by Herve Peroteau on 02/04/2019.
-//  Copyright © 2019 NavBlue. All rights reserved.
+//  Created by Ashish Awasthi on 02/04/2019.
+//  Copyright © 2019 Ashish Awasthi. All rights reserved.
 //
 
 import Foundation

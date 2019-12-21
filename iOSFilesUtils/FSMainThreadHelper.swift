@@ -1,9 +1,9 @@
 //
-//  FSMainThreadHelper.swift
-//  iOS_FS_Commons
+//  FilesUtils.swift
+//  iOSFilesUtils
 //
-//  Created by Herve Peroteau on 28/10/2019.
-//  Copyright © 2019 NavBlue. All rights reserved.
+//  Created by Ashish Awasthi on 01/10/19.
+//  Copyright © 2019 Ashish Awasthi. All rights reserved.
 //
 
 import Foundation
