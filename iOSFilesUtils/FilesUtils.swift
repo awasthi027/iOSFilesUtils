@@ -78,7 +78,7 @@ enum ApplicationDirectoryPath: String {
             }
             if let dirUrlItem = applicationDirPath {
                 let isCreated = self.createDirectory(atPath: dirUrlItem.absoluteString)
-                FSLogInfo("Director created at path: \(dirUrlItem.absoluteString) \n status:- \(isCreated.rawValue)")
+               // FSLogInfo("Director created at path: \(dirUrlItem.absoluteString) \n status:- \(isCreated.rawValue)")
                applicationDirPath = URL.init(fileURLWithPath: dirUrlItem.absoluteString)
             }
         }
@@ -94,7 +94,7 @@ enum ApplicationDirectoryPath: String {
                 try fileManager.createDirectory(atPath: directoryPath, withIntermediateDirectories: true, attributes: nil)
                 fileCreateStatus = .created
             } catch {
-                FSLogError(error.localizedDescription);
+               // FSLogError(error.localizedDescription);
             }
         }else {
             fileCreateStatus = .alreadyExist
@@ -110,9 +110,9 @@ enum ApplicationDirectoryPath: String {
           isFileCopiedSuccess = true
         }
         catch let error {
-            FSLogError("Faced while copying Error:-\n\(error)")
+           // FSLogError("Faced while copying Error:-\n\(error)")
         }
-        FSLogInfo("File copied \nfrom: \(sourceURL.path)\nto: \(destURL.path) \nSuccessfully:-\(isFileCopiedSuccess)")
+       // FSLogInfo("File copied \nfrom: \(sourceURL.path)\nto: \(destURL.path) \nSuccessfully:-\(isFileCopiedSuccess)")
         return isFileCopiedSuccess
       }
     
@@ -149,7 +149,7 @@ enum ApplicationDirectoryPath: String {
             break
         }
         guard let url = URL(string: "\(appScheme)://app") else {
-         FSLogInfo("\(appScheme) application is not installed on device")
+         //FSLogInfo("\(appScheme) application is not installed on device")
          return false
          }
         let result = FSMainThreadHelper.runSyncOnMainThread { () -> (Bool?) in
@@ -160,7 +160,7 @@ enum ApplicationDirectoryPath: String {
       }
     
     @objc public static func deleteOldFiles(directory: String, days: UInt, deleteEmptyDirectories: Bool = true) {
-        FSLogInfo("deleteOldFiles:\(directory) days:\(days) deleteEmptyDirectories:\(deleteEmptyDirectories) ...")
+       // FSLogInfo("deleteOldFiles:\(directory) days:\(days) deleteEmptyDirectories:\(deleteEmptyDirectories) ...")
     }
     
     @objc public func donwloadImage() {
