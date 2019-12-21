@@ -102,7 +102,7 @@ enum ApplicationDirectoryPath: String {
         return fileCreateStatus
     }
     
-    @objc static func copyfile(from sourceURL: URL, to destURL: URL) ->Bool {
+    @objc public static func copyfile(from sourceURL: URL, to destURL: URL) ->Bool {
         /* Copy report from compuation folder and paste into eff  */
         var isFileCopiedSuccess = false
         do {
@@ -159,8 +159,8 @@ enum ApplicationDirectoryPath: String {
          return result ?? false
       }
     
-    @objc public func deleteOldFiles(directory: String, days: UInt, deleteEmptyDirectories: Bool = true) {
-        print ("deleteOldFiles:\(directory) days:\(days) deleteEmptyDirectories:\(deleteEmptyDirectories) ...")
+    @objc public static func deleteOldFiles(directory: String, days: UInt, deleteEmptyDirectories: Bool = true) {
+        FSLogDebug ("deleteOldFiles:\(directory) days:\(days) deleteEmptyDirectories:\(deleteEmptyDirectories) ...")
     }
     
     @objc public func donwloadImage() {

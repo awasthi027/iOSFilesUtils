@@ -10,11 +10,10 @@
 		7F914D3D4B3303E4842B2866 /* Pods_iOSFilesUtilsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84956CBFC4B10EE10A9EC397 /* Pods_iOSFilesUtilsTests.framework */; };
 		CB980C912343639E007E2469 /* iOSFilesUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB980C872343639E007E2469 /* iOSFilesUtils.framework */; };
 		CB980C962343639E007E2469 /* iOSFilesUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB980C952343639E007E2469 /* iOSFilesUtilsTests.swift */; };
-		CB9FE5F623ADDDC6004712C3 /* iOSFilesUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9FE5F523ADDDC6004712C3 /* iOSFilesUtils.h */; };
+		CB9FE5F623ADDDC6004712C3 /* iOSFilesUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9FE5F523ADDDC6004712C3 /* iOSFilesUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB9FE5F923ADDEBA004712C3 /* FSMainThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FE5F723ADDEBA004712C3 /* FSMainThreadHelper.swift */; };
 		CB9FE5FA23ADDEBA004712C3 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FE5F823ADDEBA004712C3 /* LogHelper.swift */; };
 		CBA4518E23ACF1F000718A31 /* FilesUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA4518C23ACF1F000718A31 /* FilesUtils.swift */; };
-		E3A83C4AA1C2D658AB52BA3A /* Pods_iOSFilesUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E9379FEAA9E456B1C4C5FB /* Pods_iOSFilesUtils.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3A83C4AA1C2D658AB52BA3A /* Pods_iOSFilesUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +442,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = iOSFilesUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +470,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = iOSFilesUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
