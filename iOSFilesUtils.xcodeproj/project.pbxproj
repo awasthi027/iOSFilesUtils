@@ -10,8 +10,7 @@
 		7F914D3D4B3303E4842B2866 /* Pods_iOSFilesUtilsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84956CBFC4B10EE10A9EC397 /* Pods_iOSFilesUtilsTests.framework */; };
 		CB980C912343639E007E2469 /* iOSFilesUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB980C872343639E007E2469 /* iOSFilesUtils.framework */; };
 		CB980C962343639E007E2469 /* iOSFilesUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB980C952343639E007E2469 /* iOSFilesUtilsTests.swift */; };
-		CB9FE5DF23ADD2A5004712C3 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FE5DE23ADD2A5004712C3 /* LogHelper.swift */; };
-		CB9FE5E123ADD2CA004712C3 /* FSMainThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FE5E023ADD2CA004712C3 /* FSMainThreadHelper.swift */; };
+		CB9FE5F623ADDDC6004712C3 /* iOSFilesUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9FE5F523ADDDC6004712C3 /* iOSFilesUtils.h */; };
 		CBA4518E23ACF1F000718A31 /* FilesUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA4518C23ACF1F000718A31 /* FilesUtils.swift */; };
 		E3A83C4AA1C2D658AB52BA3A /* Pods_iOSFilesUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E9379FEAA9E456B1C4C5FB /* Pods_iOSFilesUtils.framework */; };
 /* End PBXBuildFile section */
@@ -37,8 +36,7 @@
 		CB980C902343639E007E2469 /* iOSFilesUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSFilesUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB980C952343639E007E2469 /* iOSFilesUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSFilesUtilsTests.swift; sourceTree = "<group>"; };
 		CB980C972343639E007E2469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB9FE5DE23ADD2A5004712C3 /* LogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
-		CB9FE5E023ADD2CA004712C3 /* FSMainThreadHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMainThreadHelper.swift; sourceTree = "<group>"; };
+		CB9FE5F523ADDDC6004712C3 /* iOSFilesUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSFilesUtils.h; sourceTree = "<group>"; };
 		CBA4518C23ACF1F000718A31 /* FilesUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesUtils.swift; sourceTree = "<group>"; };
 		FAED3E61BC8ED01B4CED59CA /* Pods-iOSFilesUtilsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSFilesUtilsTests.release.xcconfig"; path = "Target Support Files/Pods-iOSFilesUtilsTests/Pods-iOSFilesUtilsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,10 +105,9 @@
 		CB980C892343639E007E2469 /* iOSFilesUtils */ = {
 			isa = PBXGroup;
 			children = (
+				CB9FE5F523ADDDC6004712C3 /* iOSFilesUtils.h */,
 				CBA4518C23ACF1F000718A31 /* FilesUtils.swift */,
 				CB980C8B2343639E007E2469 /* Info.plist */,
-				CB9FE5DE23ADD2A5004712C3 /* LogHelper.swift */,
-				CB9FE5E023ADD2CA004712C3 /* FSMainThreadHelper.swift */,
 			);
 			path = iOSFilesUtils;
 			sourceTree = "<group>";
@@ -131,6 +128,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9FE5F623ADDDC6004712C3 /* iOSFilesUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB9FE5DF23ADD2A5004712C3 /* LogHelper.swift in Sources */,
 				CBA4518E23ACF1F000718A31 /* FilesUtils.swift in Sources */,
-				CB9FE5E123ADD2CA004712C3 /* FSMainThreadHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
