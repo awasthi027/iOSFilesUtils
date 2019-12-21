@@ -14,6 +14,11 @@
 		CB9FE5F923ADDEBA004712C3 /* FSMainThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FE5F723ADDEBA004712C3 /* FSMainThreadHelper.swift */; };
 		CB9FE5FA23ADDEBA004712C3 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FE5F823ADDEBA004712C3 /* LogHelper.swift */; };
 		CBA4518E23ACF1F000718A31 /* FilesUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA4518C23ACF1F000718A31 /* FilesUtils.swift */; };
+		CBEE3BED23AE78D7000E818B /* FSApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEE3BEC23AE78D7000E818B /* FSApplication.swift */; };
+		CBEE3BEF23AE7C6C000E818B /* FSApplicationObjCWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEE3BEE23AE7C6C000E818B /* FSApplicationObjCWrapper.swift */; };
+		CBEE3BF123AE7D3C000E818B /* FSApplicationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEE3BF023AE7D3C000E818B /* FSApplicationsService.swift */; };
+		CBEE3BF323AE7E8B000E818B /* SharedUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEE3BF223AE7E8B000E818B /* SharedUtils.swift */; };
+		D88C2C0F4119B004F7398769 /* Pods_iOSFilesUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E9379FEAA9E456B1C4C5FB /* Pods_iOSFilesUtils.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +46,10 @@
 		CB9FE5F723ADDEBA004712C3 /* FSMainThreadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMainThreadHelper.swift; sourceTree = "<group>"; };
 		CB9FE5F823ADDEBA004712C3 /* LogHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
 		CBA4518C23ACF1F000718A31 /* FilesUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesUtils.swift; sourceTree = "<group>"; };
+		CBEE3BEC23AE78D7000E818B /* FSApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSApplication.swift; sourceTree = "<group>"; };
+		CBEE3BEE23AE7C6C000E818B /* FSApplicationObjCWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSApplicationObjCWrapper.swift; sourceTree = "<group>"; };
+		CBEE3BF023AE7D3C000E818B /* FSApplicationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSApplicationsService.swift; sourceTree = "<group>"; };
+		CBEE3BF223AE7E8B000E818B /* SharedUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUtils.swift; sourceTree = "<group>"; };
 		FAED3E61BC8ED01B4CED59CA /* Pods-iOSFilesUtilsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSFilesUtilsTests.release.xcconfig"; path = "Target Support Files/Pods-iOSFilesUtilsTests/Pods-iOSFilesUtilsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D88C2C0F4119B004F7398769 /* Pods_iOSFilesUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +122,10 @@
 				CB9FE5F523ADDDC6004712C3 /* iOSFilesUtils.h */,
 				CBA4518C23ACF1F000718A31 /* FilesUtils.swift */,
 				CB980C8B2343639E007E2469 /* Info.plist */,
+				CBEE3BEC23AE78D7000E818B /* FSApplication.swift */,
+				CBEE3BEE23AE7C6C000E818B /* FSApplicationObjCWrapper.swift */,
+				CBEE3BF023AE7D3C000E818B /* FSApplicationsService.swift */,
+				CBEE3BF223AE7E8B000E818B /* SharedUtils.swift */,
 			);
 			path = iOSFilesUtils;
 			sourceTree = "<group>";
@@ -284,9 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBEE3BF323AE7E8B000E818B /* SharedUtils.swift in Sources */,
 				CBA4518E23ACF1F000718A31 /* FilesUtils.swift in Sources */,
+				CBEE3BEF23AE7C6C000E818B /* FSApplicationObjCWrapper.swift in Sources */,
 				CB9FE5FA23ADDEBA004712C3 /* LogHelper.swift in Sources */,
 				CB9FE5F923ADDEBA004712C3 /* FSMainThreadHelper.swift in Sources */,
+				CBEE3BED23AE78D7000E818B /* FSApplication.swift in Sources */,
+				CBEE3BF123AE7D3C000E818B /* FSApplicationsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

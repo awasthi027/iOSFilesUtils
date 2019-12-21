@@ -3,7 +3,7 @@
 //  ImageCacheiOS
 //
 //  Created by Ashish Awasthi on 28/09/19.
-//  Copyright © 2019 Tanuja Awasthi. All rights reserved.
+//  Copyright © 2019 Ashish Awasthi. All rights reserved.
 //
 
 
