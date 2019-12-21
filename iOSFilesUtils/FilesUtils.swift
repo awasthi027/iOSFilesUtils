@@ -78,7 +78,7 @@ enum ApplicationDirectoryPath: String {
             }
             if let dirUrlItem = applicationDirPath {
                 let isCreated = self.createDirectory(atPath: dirUrlItem.absoluteString)
-                print("Director created at path: \(dirUrlItem.absoluteString) \n status:- \(isCreated.rawValue)")
+                FSLogDebug("Director created at path: \(dirUrlItem.absoluteString) \n status:- \(isCreated.rawValue)")
                applicationDirPath = URL.init(fileURLWithPath: dirUrlItem.absoluteString)
             }
         }
